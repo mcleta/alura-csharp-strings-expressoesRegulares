@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using ByteBank.Modelos;
 using ByteBank.Modelos.Funcionarios;
@@ -13,6 +14,31 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
+            // Olá, meu nome é Guilherme e você pode entrar em contato comigo
+            // através do número 8457-4456!
+
+            // Meu nome é Guilherme, me ligue em 4784-4546
+
+            //  Expressão Regular
+            // "[0123456789][0123456789][0123456789][0123456789][-][0123456789][0123456789][0123456789][0123456789]";
+            // "[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][0-9]";
+            // "[0-9]{4,5}[-][0-9]{4}";
+            // "[0-9]{4,5}[-]{0,1}[0-9]{4}";
+            // "[0-9]{4,5}-{0,1}[0-9]{4}";
+            string padrao = "[0-9]{4,5}-?[0-9]{4}";
+
+            string textoDeTeste = "Meu nome é Guilherme, me ligue em 4784-4546";
+            Console.WriteLine(Regex.IsMatch(textoDeTeste, padrao)); // retorno boolean: True
+
+            Match resul = Regex.Match(textoDeTeste, padrao); // retorna o valor do match: 4784-4546
+            Console.WriteLine(resul);
+
+            Console.ReadLine();
+
+
+
+
+
             // pegar algum argumento e trazer seu valor da url
             string urlParametros = "http://www.bytebank.com/cambio?moedaOrigem=real&moedaDestino=dolar";
             ExtratorDeValorArgumentoURL extratorDeValores = new ExtratorDeValorArgumentoURL(urlParametros);
