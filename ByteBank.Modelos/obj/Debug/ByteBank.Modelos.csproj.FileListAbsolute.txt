@@ -1,0 +1,11 @@
+C:\Dev\Alura\C#\Curso5\ByteBank\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.dll
+C:\Dev\Alura\C#\Curso5\ByteBank\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.pdb
+C:\Dev\Alura\C#\Curso5\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.csproj.CoreCompileInputs.cache
+C:\Dev\Alura\C#\Curso5\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.dll
+C:\Dev\Alura\C#\Curso5\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.pdb
+C:\Dev\Alura\C#\Curso5\ByteBank\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.xml
+C:\Dev\Alura\C#\Curso5\ByteBank\ByteBank.Modelos\bin\Debug\Humanizer.dll
+C:\Dev\Alura\C#\Curso5\ByteBank\ByteBank.Modelos\bin\Debug\Humanizer.xml
+C:\Dev\Alura\C#\Curso5\ByteBank\ByteBank.Modelos\bin\Debug\pt\Humanizer.resources.dll
+C:\Dev\Alura\C#\Curso5\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.csproj.AssemblyReference.cache
+C:\Dev\Alura\C#\Curso5\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.csproj.CopyComplete
