@@ -14,6 +14,34 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
+            Cliente carlos_1 = new Cliente();
+            carlos_1.Nome = "Carlos";
+            carlos_1.CPF = "458.623.120-03";
+            carlos_1.Profissao = "Designer";
+
+            Cliente carlos_2 = new Cliente();
+            carlos_2.Nome = "Carlos";
+            carlos_2.CPF = "458.623.120-03";
+            carlos_2.Profissao = "Designer";
+
+            if (carlos_1.Equals(carlos_2))
+            {
+                Console.WriteLine("São iguais!");
+            }
+            else
+            {
+                Console.WriteLine("Não são iguais!");
+            }
+
+            Console.WriteLine(carlos_2.ToString());
+
+
+            Console.ReadLine();
+
+        }
+
+        static void TestaString()
+        {
             // Olá, meu nome é Guilherme e você pode entrar em contato comigo
             // através do número 8457-4456!
 
@@ -36,16 +64,13 @@ namespace ByteBank.SistemaAgencia
             Console.ReadLine();
 
 
-
-
-
             // pegar algum argumento e trazer seu valor da url
             string urlParametros = "http://www.bytebank.com/cambio?moedaOrigem=real&moedaDestino=dolar";
             ExtratorDeValorArgumentoURL extratorDeValores = new ExtratorDeValorArgumentoURL(urlParametros);
 
             //Moeda Origem
             string valorMoedaOrigem = extratorDeValores.GetValor("moedaOrigem");
-            Console.WriteLine("Valor de moedaOrigem: " + valorMoedaOrigem); 
+            Console.WriteLine("Valor de moedaOrigem: " + valorMoedaOrigem);
             //Moeda Destino
             string valorMoedaDestino = extratorDeValores.GetValor("moedaDestino");
             Console.WriteLine("Valor de moedaDestino: " + valorMoedaDestino);
@@ -88,9 +113,6 @@ namespace ByteBank.SistemaAgencia
             string textoNulo = null;
             Console.WriteLine(string.IsNullOrEmpty(textoVazio));
             Console.WriteLine(string.IsNullOrEmpty(textoNulo));
-
-            Console.ReadLine();
-
         }
 
     }
